@@ -1,1 +1,1 @@
-# preferenciaBanco
+# Preferencia de fila de banco
