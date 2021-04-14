@@ -32,7 +32,7 @@ public class App {
                 
                 int resp = sc.nextInt();
                
-                if (resp == 1) {
+                if (resp == 1){
                     System.out.println("---------Opção: ADICIONAR CLIENTE---------");
 
                     if(fila.isFull() == false){
