@@ -12,7 +12,7 @@ public class FilaCliente {
             this.tamanhoVetor = tamanhoMaximo;
             this.posFinal = -1;
     }
-    
+       
     
     public void destroyFila() {
         this.dados = null;
