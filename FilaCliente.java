@@ -124,14 +124,14 @@ public class FilaCliente {
                 System.out.printf("\nVocê chamou o cliente de senha: " + this.idCliente[0]);
 
                 if (pref == true) {
-                    System.out.printf(" ele é um cliente normal \n\n");
+                    System.out.printf(" ele é um cliente preferencial \n\n");
                 } else {
-                    System.out.printf(" ele é um cliente preferencial\n\n");
+                    System.out.printf(" ele é um cliente normal\n\n");
                 }
                 for (int j = i; j <= this.posFinal; j++) {
                     enqueue(this.idCliente[0], dequeue());
                 }
-                System.out.printf("\n é o looping?");
+                
                 break;
             } else {
                 enqueue(this.idCliente[0], dequeue());
@@ -142,9 +142,9 @@ public class FilaCliente {
             System.out.printf("\nVocê chamou o cliente de senha: " + this.idCliente[0]);
 
             if (this.preferencia[0] == true) {
-                System.out.printf(" ele é um cliente normal\n\n");
-            } else {
                 System.out.printf(" ele é um cliente preferencial\n\n");
+            } else {
+                System.out.printf(" ele é um cliente normal\n\n");
             }
         }
 

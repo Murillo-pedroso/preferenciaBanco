@@ -48,17 +48,17 @@ public class App {
 
                             if (respPreferencia == 0) {
                                 fila.enqueue(true);
-                                System.out.println("adicionou true");
+                                
 
                             } else if (respPreferencia == 1) {
                                 fila.enqueue(false);
-                                System.out.println("adicionou false");
+                                
                             } else {
                                 System.out.println("-----COMANDO INVÁLIDO-----");
                             }
-                            System.out.println("adicionou false");
+                           
                         } while (respPreferencia != 0 && respPreferencia != 1);
-                        System.out.println("adicionou false");
+                       
                     } else {
 
                         System.out.println("\nA fila está cheia, chame o próximo cliente para abrir mais espaço\n");
