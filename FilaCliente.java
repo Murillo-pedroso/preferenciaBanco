@@ -111,10 +111,10 @@ public class FilaCliente {
         boolean pref;
         int chamou = 0;
         if (this.cont == 3) {
-            pref = true;
+            pref = false;
             cont = 0;
         } else {
-            pref = false;
+            pref = true;
             cont++;
         }
         for (int i = 0; i <= this.posFinal; i++) {
@@ -124,9 +124,9 @@ public class FilaCliente {
                 System.out.printf("\nVocê chamou o cliente de senha: " + this.idCliente[0]);
 
                 if (pref == true) {
-                    System.out.printf(" ele é um cliente preferencial\n\n");
+                    System.out.printf(" ele é um cliente normal \n\n");
                 } else {
-                    System.out.printf(" ele é um cliente normal\n\n");
+                    System.out.printf(" ele é um cliente preferencial\n\n");
                 }
                 for (int j = i; j <= this.posFinal; j++) {
                     enqueue(this.idCliente[0], dequeue());
@@ -142,9 +142,9 @@ public class FilaCliente {
             System.out.printf("\nVocê chamou o cliente de senha: " + this.idCliente[0]);
 
             if (this.preferencia[0] == true) {
-                System.out.printf(" ele é um cliente preferencial\n\n");
-            } else {
                 System.out.printf(" ele é um cliente normal\n\n");
+            } else {
+                System.out.printf(" ele é um cliente preferencial\n\n");
             }
         }
 
